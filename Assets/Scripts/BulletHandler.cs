@@ -34,5 +34,6 @@ public class BulletHandler : MonoBehaviour
 
         Rigidbody rb = newObject.GetComponent<Rigidbody>();
         rb.velocity = velocity;
+        newObject.transform.forward = rb.velocity;
     }
 }
